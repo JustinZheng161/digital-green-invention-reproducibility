@@ -11,11 +11,22 @@
 
 ## 下载和再分发政策
 
-1. 下载脚本会以 DOI 官方端点取得数据，并写入下载时间、HTTP响应、文件大小和 SHA-256。
-2. 原始文件存放在 `data/raw/`；仅私有数据仓库同步该目录。
-3. 清洗后的可复现工作数据存放在 `data/derived/`；默认私有同步，因为它仍可含受限的公司—年度记录。
-4. 公开仓库只提交 `src/`、`tests/`、`docs/`、`data/metadata/`、哈希和由数据聚合生成且无微观记录的 `results/tables/` 与 `results/figures/`。
+1. 原始档案应仅在私有工作区从 DOI 官方端点下载，并同时记录下载时间、HTTP响应、文件大小和 SHA-256。
+2. 原始文件存放在私有仓库的 `data/raw/`；公开仓库不包含该目录。
+3. 清洗后的可复现工作数据存放在私有仓库的 `data/derived/`；默认私有同步，因为它仍可含受限的公司—年度记录。
+4. 公开仓库只提交 `src/`、`tests/`、`docs/`、`data/DATA_ACCESS.md`、根目录 `metadata/` 下的哈希，以及由数据聚合生成且无微观记录的 `results/tables/` 与 `results/figures/`。
 5. 任何原始或派生数据在推送前必须通过敏感文件检查、大小检查和哈希清单检查。
+
+## 私有工作区下载示例
+
+以下命令只能在私有数据目录执行，且下载后必须使用公开仓库中 `metadata/source_archive_sha256.txt` 对照SHA-256值；不得将下载结果提交至公开仓库。
+
+```bash
+mkdir -p data/raw
+curl -fL "https://data.mendeley.com/public-api/zip/wjw77byzc2/download/1" -o data/raw/map_green_innovation_v1.zip
+curl -fL "https://data.mendeley.com/public-api/zip/s3cdwjthnv/download/1" -o data/raw/digital_transformation_risktaking_v1.zip
+sha256sum data/raw/*.zip
+```
 
 ## 引用
 
