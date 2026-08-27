@@ -40,6 +40,7 @@ The raw-DT two-way fixed-effects linear specification gives a coefficient of 0.0
 | Final minor-revision response and closure matrix | [`docs/REVIEWER_FINAL_MINOR_REVISION_RESPONSE.md`](docs/REVIEWER_FINAL_MINOR_REVISION_RESPONSE.md) |
 | SCI technical-compliance response | [`docs/TECHNICAL_COMPLIANCE_RESPONSE.md`](docs/TECHNICAL_COMPLIANCE_RESPONSE.md) |
 | Final editorial-compliance response | [`docs/FINAL_EDITORIAL_COMPLIANCE_RESPONSE.md`](docs/FINAL_EDITORIAL_COMPLIANCE_RESPONSE.md) |
+| Final print-ready non-formula closure | [`docs/FINAL_PRINTREADY_NONFORMULA_RESPONSE.md`](docs/FINAL_PRINTREADY_NONFORMULA_RESPONSE.md) |
 | 600 dpi TIFF/PDF figure delivery manifest | [`results/figures/publication_figure_asset_manifest.json`](results/figures/publication_figure_asset_manifest.json) |
 | Figure technical manifest | [`docs/figure_technical_manifest.json`](docs/figure_technical_manifest.json) |
 | Two-part descriptive decomposition | [`results/reviewer_r1/tables/two_part_descriptive_decomposition.csv`](results/reviewer_r1/tables/two_part_descriptive_decomposition.csv) |

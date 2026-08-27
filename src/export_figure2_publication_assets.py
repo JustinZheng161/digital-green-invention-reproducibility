@@ -2,6 +2,7 @@
 from pathlib import Path
 import pandas as pd
 import matplotlib.pyplot as plt
+plt.rcParams.update({'font.size': 8, 'axes.labelsize': 9, 'axes.titlesize': 11, 'xtick.labelsize': 8, 'ytick.labelsize': 8, 'legend.fontsize': 8})
 from PIL import Image
 
 ROOT=Path(__file__).resolve().parents[1]

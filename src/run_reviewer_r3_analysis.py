@@ -13,6 +13,7 @@ import os
 import warnings
 
 import matplotlib.pyplot as plt
+plt.rcParams.update({'font.size': 8, 'axes.labelsize': 9, 'axes.titlesize': 11, 'xtick.labelsize': 8, 'ytick.labelsize': 8, 'legend.fontsize': 8})
 import numpy as np
 import pandas as pd
 import pyfixest as pf
