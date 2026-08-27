@@ -8,6 +8,7 @@ This revision addresses the final technical-review requests while preserving the
 |---|---|---|---|---|
 | T-1 | Standardize Table 1 study labels and punctuation | Table 1 now uses pure numeric study identifiers `[2]`–`[5]`; the current-study row keeps sentence-case semicolon-separated measurement and design clauses | Table 1 text check | Completed |
 | T-2 | Define complete-case panel | First substantive mention now defines it as observations with non-missing values for all variables in the analytical model | Section 3.1 text check | Completed |
+| T-3 follow-up | Distinguish count variable from descriptive output phrase | First substantive outcome description now names the variable `collaborative green invention count` and states that “output” is only a descriptive phrase for the same count | Terminology text check | Completed |
 | F-1 | Use one numeric citation system | Main-text and Table 1 study references are numeric-only. The grouped literature citation remains `[2–6]` | Citation-style check | Completed |
 | F-2 | Replace numeric double hyphens with en dashes | The final manuscript contains no `digit--digit` sequence; date ranges use `–` | Typography scan | Completed |
 | F-3 | Make Table 8 note normal sentence case | The all-capitals callout is now a standard `Note.` paragraph explaining that p-values are unadjusted exploratory values and directing readers to Tables 4 and 5 | Table 8 note check | Completed |
