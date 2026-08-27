@@ -2,8 +2,8 @@
   {
     "source_png": "results/reviewer_r1/figures/distribution_diagnostics_annotated.png",
     "delivery_tiff": "results/reviewer_r1/figures/distribution_diagnostics_annotated.tiff",
-    "width_px": 6064,
-    "height_px": 2355,
+    "width_px": 6094,
+    "height_px": 2373,
     "dpi": 600,
     "format": "TIFF (LZW)",
     "status": "native 600 dpi source render converted without resizing"
@@ -11,8 +11,8 @@
   {
     "source_png": "results/reviewer_r3/figures/r3_estimator_specific_coefficient_panels.png",
     "delivery_tiff": "results/reviewer_r3/figures/r3_estimator_specific_coefficient_panels.tiff",
-    "width_px": 6064,
-    "height_px": 2661,
+    "width_px": 6099,
+    "height_px": 2679,
     "dpi": 600,
     "format": "TIFF (LZW)",
     "status": "native 600 dpi source render converted without resizing"
@@ -20,8 +20,8 @@
   {
     "source_png": "results/reviewer_r1/figures/ols_count_residual_diagnostic.png",
     "delivery_tiff": "results/reviewer_r1/figures/ols_count_residual_diagnostic.tiff",
-    "width_px": 4140,
-    "height_px": 2640,
+    "width_px": 4176,
+    "height_px": 2676,
     "dpi": 600,
     "format": "TIFF (LZW)",
     "status": "native 600 dpi source render converted without resizing"
@@ -29,8 +29,8 @@
   {
     "source_png": "results/reviewer_r1/figures/selection_love_plot.png",
     "delivery_tiff": "results/reviewer_r1/figures/selection_love_plot.tiff",
-    "width_px": 4140,
-    "height_px": 2580,
+    "width_px": 4176,
+    "height_px": 2616,
     "dpi": 600,
     "format": "TIFF (LZW)",
     "status": "native 600 dpi source render converted without resizing"
@@ -38,8 +38,8 @@
   {
     "source_png": "results/reviewer_r2/figures/r2_estimator_sample_retention.png",
     "delivery_tiff": "results/reviewer_r2/figures/r2_estimator_sample_retention.tiff",
-    "width_px": 4740,
-    "height_px": 2700,
+    "width_px": 4776,
+    "height_px": 2736,
     "dpi": 600,
     "format": "TIFF (LZW)",
     "status": "native 600 dpi source render converted without resizing"
@@ -47,8 +47,8 @@
   {
     "source_png": "results/reviewer_r3/figures/r3_ppml_diagnostics.png",
     "delivery_tiff": "results/reviewer_r3/figures/r3_ppml_diagnostics.tiff",
-    "width_px": 6049,
-    "height_px": 2416,
+    "width_px": 6085,
+    "height_px": 2434,
     "dpi": 600,
     "format": "TIFF (LZW)",
     "status": "native 600 dpi source render converted without resizing"
@@ -56,8 +56,8 @@
   {
     "source_png": "results/reviewer_r2/figures/r2_timing_year_support.png",
     "delivery_tiff": "results/reviewer_r2/figures/r2_timing_year_support.tiff",
-    "width_px": 4740,
-    "height_px": 2820,
+    "width_px": 4776,
+    "height_px": 2856,
     "dpi": 600,
     "format": "TIFF (LZW)",
     "status": "native 600 dpi source render converted without resizing"
