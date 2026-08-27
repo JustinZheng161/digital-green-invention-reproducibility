@@ -180,7 +180,7 @@ influence_df = pd.DataFrame(influence_rows)
 influence_df.to_csv(TABLES / 'r3_ppml_top_contribution_firm_deletions.csv', index=False)
 
 # Binned, aggregate visual diagnostics; no raw firm-year points or firm IDs are written.
-fig, axes = plt.subplots(1, 2, figsize=(10.2, 3.9), dpi=300)
+fig, axes = plt.subplots(1, 2, figsize=(10.2, 3.9), dpi=600)
 axes[0].hist(pearson, bins=55, color='#2f6f8f', edgecolor='white', linewidth=.3)
 axes[0].axvline(-threshold, color='#a3342a', ls='--', lw=1)
 axes[0].axvline(threshold, color='#a3342a', ls='--', lw=1, label='|Pearson| = 3')

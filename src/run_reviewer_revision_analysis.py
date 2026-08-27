@@ -123,7 +123,7 @@ selection.to_csv(TABLES / 'selection_standardized_mean_differences.csv', index=F
 
 # Love plot of sample selection standardized differences.
 plot_sel = selection.sort_values('Absolute SMD')
-fig, ax = plt.subplots(figsize=(7.0, 4.4), dpi=300)
+fig, ax = plt.subplots(figsize=(7.0, 4.4), dpi=600)
 ax.hlines(y=np.arange(len(plot_sel)), xmin=0, xmax=plot_sel['Absolute SMD'], color='#94a3b8', lw=1.5)
 ax.scatter(plot_sel['Absolute SMD'], np.arange(len(plot_sel)), color='#1f4e79', s=34, zorder=3)
 ax.axvline(0.1, color='#b91c1c', ls='--', lw=1, label='|SMD| = 0.10 reference')
@@ -174,7 +174,7 @@ ols_diag.to_csv(TABLES / 'appendix_ols_count_diagnostics.csv', index=False)
 
 # Residual versus fitted plot; a fixed random subsample prevents overplotting.
 idx = rng.choice(np.arange(len(resid)), size=min(3000, len(resid)), replace=False)
-fig, ax = plt.subplots(figsize=(7.0, 4.5), dpi=300)
+fig, ax = plt.subplots(figsize=(7.0, 4.5), dpi=600)
 ax.scatter(fitted[idx], resid[idx], alpha=0.20, s=9, color='#1f4e79', linewidths=0)
 ax.axhline(0, color='black', lw=0.9)
 ax.set_xlabel('Fitted value from count-OLS with firm/year dummies')
@@ -219,7 +219,7 @@ two_part.to_csv(TABLES / 'two_part_descriptive_decomposition.csv', index=False)
 # 6) Updated self-contained distribution plot with requested key statistics.
 dt = panel['dt_raw'].dropna()
 count = panel['green_invention_count'].dropna()
-fig, axes = plt.subplots(1, 2, figsize=(10.2, 3.8), dpi=300)
+fig, axes = plt.subplots(1, 2, figsize=(10.2, 3.8), dpi=600)
 axes[0].hist(dt, bins=70, color='#475569', edgecolor='white', linewidth=0.2)
 axes[0].axvline(dt.median(), color='#b91c1c', lw=1.2, ls='--', label='Median')
 axes[0].set_title('Raw digital-transformation score')

@@ -118,3 +118,4 @@ The selection model is a logit for deterministic D1–D2 matched availability co
 | green_invention_count | D1 source vs retained matched sample (availability-weighted) |        0.6797 |            0.8018 | 0.0440 |         0.0440 |
 
 The weighted/no-covariate and weighted/selection-covariate variants are both reported to expose sensitivity to simultaneous weighting and regression adjustment. Neither is a causal estimate. If their direction differs, that is uncertainty rather than evidence for model selection.
+

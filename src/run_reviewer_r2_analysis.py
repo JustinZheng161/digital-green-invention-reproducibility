@@ -350,7 +350,7 @@ balance = pd.DataFrame(balance_rows)
 balance.to_csv(TABLES / 'r2_availability_balance_diagnostics.csv', index=False)
 
 # ---- 5. Publication-ready aggregate figures ----
-fig, ax = plt.subplots(figsize=(8.0, 4.6), dpi=300)
+fig, ax = plt.subplots(figsize=(8.0, 4.6), dpi=600)
 plot = profiles.loc[profiles['Sample'].ne('D1 green-source file'), ['Sample', 'Share of matched complete-case observations']].copy()
 plot = plot.iloc[::-1]
 ax.barh(plot['Sample'], plot['Share of matched complete-case observations'], color='#1f4e79')
@@ -364,7 +364,7 @@ fig.tight_layout()
 fig.savefig(FIGURES / 'r2_estimator_sample_retention.png', bbox_inches='tight')
 plt.close(fig)
 
-fig, ax = plt.subplots(figsize=(8.0, 4.8), dpi=300)
+fig, ax = plt.subplots(figsize=(8.0, 4.8), dpi=600)
 for test, sub in year_support.groupby('Test'):
     ax.plot(sub['Outcome year'], sub['Retained PPML observations'], marker='o', lw=1.8, label=test)
 ax.set_xticks(range(2014, 2021))

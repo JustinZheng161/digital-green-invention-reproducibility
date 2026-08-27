@@ -24,13 +24,13 @@
   "extreme_residual_rule": "Apply |Pearson residual| > 3 to all observations retained by the locked conditional PPML, then refit once.",
   "firm_deletion_rule": "Delete each of the top 6 of 505 retained firms ranked by Pearson X2 contribution, one at a time.",
   "files": [
-    "r3_proxy_sensitivity_models.csv",
-    "r3_ppml_pearson_residual_summary.csv",
-    "r3_ppml_extreme_residual_sensitivity.csv",
-    "r3_ppml_top_contribution_firm_deletions.csv",
-    "r3_global_association_test_inventory.csv",
-    "r3_table5_family_specific_multiplicity.csv",
     "r3_d2_rd_proxy_year_support.csv",
+    "r3_global_association_test_inventory.csv",
+    "r3_ppml_extreme_residual_sensitivity.csv",
+    "r3_ppml_pearson_residual_summary.csv",
+    "r3_ppml_top_contribution_firm_deletions.csv",
+    "r3_proxy_sensitivity_models.csv",
+    "r3_table5_family_specific_multiplicity.csv",
     "r3_ppml_diagnostics.png"
   ]
 }
