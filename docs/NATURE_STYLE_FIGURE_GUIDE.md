@@ -16,7 +16,7 @@ Every semantic figure stem has four same-content outputs: a **600 dpi RGB PNG**,
 | Figure 2 | `figure_02_estimator_specific_associations` | Released aggregate R3 coefficient table | Shows estimates and 95% CIs without treating estimator-specific samples as interchangeable. |
 | Figure A1 | `figure_A1_count_ols_residual_diagnostic` | Private matched panel; locked deterministic diagnostic | Displays residual-versus-fitted values for the established 3,000-observation subsample. |
 | Figure B1 | `figure_B1_matching_selection_standardized_differences` | Released aggregate selection-SMD table | Shows descriptive source-versus-matched covariate differences. |
-| Figure B2 | `figure_B2_estimator_sample_retention` | Released aggregate R2 sample-flow table | Shows estimator-specific retention relative to the matched panel. |
+| Figure B2 | `figure_B2_estimator_sample_retention` | Released aggregate R2 sample-flow table | Shows estimator-specific retention relative to the matched panel; the 100% baseline has grey fill, a black outline, and diagonal hatching for grayscale-safe distinction. |
 | Figure C1 | `figure_C1_ppml_residual_and_dispersion_diagnostics` | Private matched panel; locked conditional-PPML diagnostic | Shows residual and descriptive binned-dispersion screens. |
 | Figure D1 | `figure_D1_strict_timing_estimator_support` | Released aggregate R2 year-support table | Shows calendar-year support for strict timing estimators. |
 

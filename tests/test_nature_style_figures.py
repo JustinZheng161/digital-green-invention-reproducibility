@@ -31,6 +31,7 @@ for item in manifest['figures']:
     assert tiff.tag_v2.get(259)==5,(stem,tiff.tag_v2.get(259)) # TIFF LZW
     svg=(ROOT/item['outputs']['svg']).read_text(encoding='utf-8')
     assert '<text' in svg and '<path' in svg,(stem,'SVG must retain text and vector paths')
+    if item['figure']=='Figure B2': assert '<pattern' in svg,(stem,'matched-panel baseline must retain a grayscale-safe hatch pattern')
     fonts=subprocess.check_output(['pdffonts',str(ROOT/item['outputs']['pdf'])],text=True)
     assert 'TrueType' in fonts,(stem,'PDF lacks a TrueType/Type 42-compatible font embedding')
 

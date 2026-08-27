@@ -70,7 +70,7 @@
       "figure": "Figure B2",
       "semantic_stem": "figure_B2_estimator_sample_retention",
       "data_source": "Released aggregate R2 sample-flow table",
-      "description": "Estimator-specific retained-observation shares relative to the matched complete-case panel.",
+      "description": "Estimator-specific retained-observation shares relative to the matched complete-case panel; the 100% baseline uses a grey fill, black outline and diagonal hatch for grayscale-safe distinction.",
       "outputs": {
         "png": "results/nature_style_figures/figure_B2_estimator_sample_retention.png",
         "pdf": "results/nature_style_figures/figure_B2_estimator_sample_retention.pdf",

@@ -111,9 +111,13 @@ save_figure(fig,'figure_B1_matching_selection_standardized_differences','Figure 
 profiles=pd.read_csv(ROOT/'results/reviewer_r2/tables/r2_sample_flow_and_estimator_profiles.csv'); keep=profiles.loc[profiles['Sample'].ne('D1 green-source file'),['Sample','Share of matched complete-case observations']].iloc[::-1].copy()
 short={'Matched complete-case panel':'Matched complete-case panel','TWFE log-outcome retained sample':'TWFE log-outcome sample','Conditional PPML retained sample':'Conditional PPML sample','Strict t−1 PPML retained sample':'Strict t−1 PPML sample','Strict t+1 PPML retained sample':'Strict t+1 PPML sample'}
 fig,ax=plt.subplots(figsize=(3.54,3.25),constrained_layout=True); colors=[COLORS['blue'] if v<.999 else COLORS['grey'] for v in keep['Share of matched complete-case observations']]; bars=ax.barh(np.arange(len(keep)),keep['Share of matched complete-case observations'],color=colors,height=.68)
+# The 100% matched-panel reference has a hatch and black outline in addition to grey fill,
+# so it remains identifiable in grayscale/black-and-white reproduction.
+for bar,sample in zip(bars,keep['Sample']):
+    if sample=='Matched complete-case panel': bar.set_hatch('///'); bar.set_edgecolor(COLORS['black']); bar.set_linewidth(.55)
 for i,v in enumerate(keep['Share of matched complete-case observations']):ax.text(v+.018,i,f'{v:.1%}',va='center',fontsize=6.5,color=COLORS['black'])
 ax.set_yticks(np.arange(len(keep)),[short.get(s,s) for s in keep['Sample']]); ax.set_xlim(0,1.14); ax.set_xlabel('Share of matched complete-case observations');style_axes(ax)
-save_figure(fig,'figure_B2_estimator_sample_retention','Figure B2','Released aggregate R2 sample-flow table','Estimator-specific retained-observation shares relative to the matched complete-case panel.')
+save_figure(fig,'figure_B2_estimator_sample_retention','Figure B2','Released aggregate R2 sample-flow table','Estimator-specific retained-observation shares relative to the matched complete-case panel; the 100% baseline uses a grey fill, black outline and diagonal hatch for grayscale-safe distinction.')
 
 # Figure C1: same conditional PPML retained sample, residual definition and 20 quantile bins.
 FULL=' + '.join(CONTROLS); ppml=pf.fepois(f'green_invention_count ~ log_dt + {FULL} | firm_id + year',data=panel,vcov={'CRV1':'firm_id'}); retained=ppml._data.copy().reset_index(drop=True); mu=np.asarray(ppml.predict(type='response'),float).reshape(-1); resid=np.asarray(ppml.resid(type='response'),float).reshape(-1); pearson=resid/np.sqrt(mu); threshold=3.0
