@@ -24,3 +24,11 @@ The structural and textual validation script `analysis/r3/validate_reviewer_revi
 The abstract and conclusion must not state that every unadjusted p-value exceeds 0.05. They must state that **no result remains below 0.05 after the declared global correction**, while individual exploratory unadjusted specifications can cross the conventional threshold. Archived pre-revision estimates may remain only in a table explicitly labeled archival comparison; they must not appear as current narrative estimates.
 
 The main text must end before References. Any post-References material must be an Appendix or Supplementary Material with a separate label. The revised manuscript will therefore place the new sensitivity section before Discussion, retain Table 8 in the main-text sequence, move Belloni into the consolidated reference list, and remove the “Additional references” subsection.
+
+## Second major-revision pass: duplicate-text and reproducibility cleanup
+
+A second review identified repeated text introduced during DOCX merging. The final cleaning script `analysis/r3/clean_reviewer_manuscript_duplicates.py` collapses the Abstract, Section 4.3, Section 4.5 and Conclusion to one canonical paragraph each. It also inserts the full control-block variable definitions: core = firm size and ROA; governance = board independence, board size, largest holder ratio, CEO duality and SOE; financial = leverage, cash flow, book-to-market, growth, fixed-asset ratio and equity balance; full = all declared controls.
+
+The final Table 8 note begins with an explicit warning: **UNADJUSTED EXPLORATORY P-VALUES. NONE SURVIVES THE GLOBAL ADJUSTMENT INVENTORY (TABLE E2).** It identifies the Table 4 M3 duplicate, the Table 5 row-4 duplicate, and the estimator-retained interpretation of PPML N. The Section 4.5 Belloni paragraph now explains that Belloni et al. (2014) discuss inference after covariate selection in high-dimensional settings, whereas the present ablations are simpler descriptive comparisons and do not implement that formal post-selection procedure.
+
+The final manuscript is `paper/r3/Digital_Transformation_Green_Invention_R3_Final.docx`. XML/paragraph scans show one occurrence each for the Abstract marker, the Section 4.3 marker, the Section 4.5 opening and the Conclusion opening. The structural validation passes with 133 paragraphs and 19 tables.
