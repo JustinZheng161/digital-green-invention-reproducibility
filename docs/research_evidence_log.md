@@ -78,3 +78,23 @@
 [14] [Xie, K. (2024). *A review of green innovation research on digital transformation enabling enterprises*. E-Commerce Letters, 13(2), 798–805.](https://doi.org/10.12677/ecl.2024.132094)
 
 当前能完整核验的近两年**同行评议综述**为E11、E12和E14三篇。对“近两年顶会综述”的原始要求，需要进行领域修正：该主题的主导发表载体是管理、环境、创新与经济学期刊，而不是计算机科学式顶会论文集；将期刊综述伪称为顶会综述是不准确的。
+
+## 审稿意见R1：计数零值处理的补充方法证据
+
+| 编号 | 已核验来源 | 与R1修改的直接关联 | 正确使用边界 |
+|---|---|---|---|
+| E15 | Feng (2021), *A comparison of zero-inflated and hurdle models for modeling zero-inflated count data*, Journal of Statistical Distributions and Applications, 8, 8. DOI:10.1186/s40488-021-00121-4 | 该综述指出ZIP与hurdle模型依赖不同的零生成过程，并建议根据数据与拟合评估选择模型。 | 支持不因“80%零值”就机械选择ZIP；当前数据没有可验证的结构零/抽样零划分，故报告PPML与两部描述性分解，而不虚构结构性ZIP主模型。 |
+| E16 | Farewell, Long, Tom, Yiu, & Su (2017), *Two-Part and Related Regression Models for Longitudinal Data*, Annual Review of Statistics and Its Application, 4, 283–315. DOI:10.1146/annurev-statistics-060116-054131 | 该综述说明二部模型常由二元发生部分和条件于二元结果的正值部分组成，并讨论其在重复测量、零质量数据中的解释问题。 | 支持本稿把发生/强度模型作为描述性分解；不把它错误称为已完全指定、已验证的hurdle或ZIP模型。 |
+
+[15] [Feng, C. X. (2021). *A comparison of zero-inflated and hurdle models for modeling zero-inflated count data*. Journal of Statistical Distributions and Applications, 8, 8.](https://doi.org/10.1186/s40488-021-00121-4)
+
+[16] [Farewell, V. T., Long, D. L., Tom, B. D. M., Yiu, S., & Su, L. (2017). *Two-Part and Related Regression Models for Longitudinal Data*. Annual Review of Statistics and Its Application, 4, 283–315.](https://doi.org/10.1146/annurev-statistics-060116-054131)
+
+
+## 2026-08-27：R2变量构造与可得性加权证据
+
+| 主题 | 已核验来源 | 可用于返修的事实 | 返修用途 |
+|---|---|---|---|
+| D2数字化转型构造 | Meng, Fan, Li & Lei (2024), *Data in Brief*, 54, 110511, [DOI](https://doi.org/10.1016/j.dib.2024.110511)；[PMC全文](https://pmc.ncbi.nlm.nih.gov/articles/PMC11168288/) | 数据论文明确说明：数字化转型以中国上市公司年报为文本来源，经内容分析、NLTK/JIEBA分词、数字关键词字典匹配和关键词频数统计构造；DT=`ln(数字化转型词频+1)`。来源涵盖沪深A股年报、CSMAR、Wind；2008–2021年17,089公司年度观测、12行业。 | 在数据与变量节/附录A1准确描述DT字段为来源作者构造的年报数字关键词频率对数指标，并说明本研究未独立重建或验证其上游爬取/词典流程。 |
+| IPW术语边界 | Rosenbaum & Rubin (1983), *Biometrika*, 70(1), 41–55；Wooldridge (2002), *Portuguese Economic Journal*, 1(2), 117–139, [DOI](https://doi.org/10.1007/s10258-002-0008-x) | 经典propensity score通常定义为给定协变量的处理分配条件概率；IPW也可用于样本选择/流失/分层，但需要明确选择指标与可识别条件。 | 不将D1–D2确定性匹配的“可得性logit”称为治疗倾向得分或因果矫正；仅称为selection-on-observables/availability calibration，并报告选择模型、重叠、权重、ESS和未观测选择局限。 |
+| 零值模型和二部描述 | Feng (2021), *Journal of Statistical Distributions and Applications*, 8, 8, [DOI](https://doi.org/10.1186/s40488-021-00121-4)；Farewell et al. (2017), *Annual Review of Statistics and Its Application*, 4, 283–315, [DOI](https://doi.org/10.1146/annurev-statistics-060116-054131) | ZIP/hurdle均可作为零值计数的技术模型，但分别蕴含不同数据生成和解释假设；二部纵向分析的发生与条件正值部分不等同于结构模型。 | 承认技术上可以拟合ZIP/hurdle，但基于固定效应可比性、强假设与透明性不将无HDFE的模型列为主推断；将现有二部结果明示为探索性描述分解。 |
