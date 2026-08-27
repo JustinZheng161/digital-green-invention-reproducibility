@@ -18,7 +18,7 @@ This repository provides an **auditable reproduction workflow** for the study *D
 
 ## Key findings
 
-The raw-DT two-way fixed-effects linear specification gives a coefficient of 0.000832 (`p=0.1911`) on the log collaborative-invention outcome. The `ln(1+raw DT)` variant gives 0.019628 (`p=0.0536`; N=6,443), and the conditional PPML count model gives 0.093325 (`p=0.0655`; N=2,774). Neither is statistically significant at the conventional 5% level. No result in the **post hoc exploratory** five-model functional-form/control family remains significant after Holm or Bonferroni adjustment. A deduplicated R3 inventory of 33 distinct reported DT-association tests likewise has no result below 0.05 under global Holm, Bonferroni, or BH-FDR adjustment. Count-OLS is a supplemental diagnostic only; strict timing, period-split, availability-calibration sensitivity, and exploratory extensive/intensive-margin results are also imprecise. These results indicate **statistical imprecision** rather than a robust positive association or a causal effect; they do not prove an exact zero association. Findings apply only to the deterministic matched panel and the stated estimator-retained contribution sets, not to the full population of Chinese listed firms.
+The raw-DT two-way fixed-effects linear specification gives a coefficient of 0.000832 (`p=0.1911`) on the log collaborative-invention outcome. The `ln(1+raw DT)` variant gives 0.019628 (`p=0.0536`; N=6,443), and the conditional PPML count model gives 0.093325 (`p=0.0655`; N=2,774). Neither is statistically significant at the conventional 5% level. No result in the **post hoc exploratory** five-model functional-form/control family remains significant after Holm or Bonferroni adjustment. A deduplicated R3 inventory of 33 distinct reported DT-association tests likewise has no result below 0.05 under global Holm, Bonferroni, or BH-FDR adjustment. Count-OLS is a supplemental diagnostic only; its formal residual-test p-values are not treated as exact iid panel tests. A descriptive two-part decomposition separates the extensive margin (Pr(count > 0)) from the positive-count intensive margin; strict timing, period-split, availability-calibration sensitivity, and both two-part components remain imprecise. These results indicate **statistical imprecision** rather than a robust positive association or a causal effect; they do not prove an exact zero association. Findings apply only to the deterministic matched panel and the stated estimator-retained contribution sets, not to the full population of Chinese listed firms.
 
 | Output | Location |
 |---|---|
@@ -36,6 +36,8 @@ The raw-DT two-way fixed-effects linear specification gives a coefficient of 0.0
 | R2 response letter | [`docs/RESPONSE_TO_REVIEWER_R2_FINAL.md`](docs/RESPONSE_TO_REVIEWER_R2_FINAL.md) |
 | R3 R&D/proxy, PPML, and global-inference outputs | [`results/reviewer_r3/`](results/reviewer_r3/) |
 | R3 reviewer matrix and response | [`docs/reviewer_r3/`](docs/reviewer_r3/) |
+| Round-4 reviewer response and closure matrix | [`docs/REVIEWER_ROUND4_RESPONSE.md`](docs/REVIEWER_ROUND4_RESPONSE.md) |
+| Two-part descriptive decomposition | [`results/reviewer_r1/tables/two_part_descriptive_decomposition.csv`](results/reviewer_r1/tables/two_part_descriptive_decomposition.csv) |
 
 ## Repository layout
 
@@ -91,6 +93,8 @@ python tests/test_reproducibility.py
 python tests/test_reviewer_r1.py
 python tests/test_reviewer_r2.py
 python tests/test_reviewer_r3.py
+python tests/test_model_upgrades.py
+python tests/audit_public_release.py
 ```
 
 The test assumes the source archives have been downloaded, their SHA-256 hashes match [`metadata/source_archive_sha256.txt`](metadata/source_archive_sha256.txt), and the private derived panel exists at the configured path. If your local path differs, set a private project root first rather than editing the source data.
