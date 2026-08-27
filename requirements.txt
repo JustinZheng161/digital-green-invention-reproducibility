@@ -1,0 +1,10 @@
+# Core numerical and econometric environment
+numpy==2.5.1
+pandas==3.0.5
+scipy==1.18.1
+statsmodels==0.14.6
+pyfixest==0.60.0
+matplotlib==3.11.1
+
+# Document extraction and manuscript generation
+python-docx==1.2.0

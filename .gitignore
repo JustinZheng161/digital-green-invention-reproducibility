@@ -1,0 +1,55 @@
+# Python environments, bytecode, caches, and test artifacts
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Credentials and operating-system/editor files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Source archives, raw extracts, row-level derived data, and private manuscripts
+data/raw/
+data/extracted/
+data/derived/
+data/private/
+*.zip
+*.dta
+*.xlsx
+*.xls
+*.parquet
+*.feather
+*.sav
+*.rds
+*.pkl
+*.pickle
+*.csv
+!results/tables/*.csv
+!results/tables/**/*.csv
+
+# Do not publicly commit manuscript or author-identifying working files
+paper/
+private/
+submission/
+*.docx
+*.pdf
+
+# Execution logs and generated local state
+*.log
+logs/
+tmp/
+temp/
+.cache/

@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility package, please cite the associated manuscript and the two DOI-archived datasets."
+title: "Digital Transformation and Collaborative Green Invention Output: Reproducibility Package"
+type: software
+authors:
+  - family-names: "Repository Maintainer"
+    given-names: "Anonymous"
+  - family-names: "Manus AI"
+    given-names: "Research Reproducibility Workflow"
+version: "1.0.0"
+date-released: "2026-08-27"
+repository-code: "https://github.com/JustinZheng161/digital-green-invention-reproducibility"
+license: "MIT"
+references:
+  - type: dataset
+    title: "map-green innovation"
+    version: "1"
+    doi: "10.17632/wjw77byzc2.1"
+  - type: dataset
+    title: "Digital transformation and strategic risk taking dataset"
+    version: "1"
+    doi: "10.17632/s3cdwjthnv.1"

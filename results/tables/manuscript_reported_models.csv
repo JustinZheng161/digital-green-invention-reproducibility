@@ -1,0 +1,6 @@
+Specification,reported_coefficient,reported_se,reported_p_value,reported_n
+"Reported two-way FE, raw DT, log quality",0.001015,0.001,0.31,6574
+"Reported two-way FE, log DT, log quality",0.021026,0.011568,0.0691,6574
+"Reported two-way FE, log DT, count OLS",0.125084,0.052239,0.0166,6574
+"Reported year-FE Poisson, log DT",0.173469,0.054027,0.0013,6574
+"Reported year-FE negative binomial, log DT",0.264182,0.060419,0.0005,6574

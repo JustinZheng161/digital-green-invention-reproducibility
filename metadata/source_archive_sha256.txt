@@ -1,0 +1,2 @@
+316138c54f56a886db6edd1b3084462b5f5d934a4436d5bb531dc4ac2ae4bfda  data/raw/map_green_innovation_v1.zip
+41a9e754a3278ee6d461955e99d4356189d78f3160ee9732fa5b7146115d1487  data/raw/digital_transformation_risktaking_v1.zip

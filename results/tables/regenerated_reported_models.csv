@@ -1,0 +1,8 @@
+Specification,coefficient,se,p_value,n_estimator
+"Regenerated two-way FE, raw DT, log quality, full controls",0.0008320707661181472,0.0006361572320529269,0.19111051852462047,6443
+"Regenerated two-way FE, log DT, log quality, full controls",0.019627850930102764,0.010161493609255456,0.05362127446391751,6443
+"Regenerated two-way FE, log DT, count OLS, full controls",0.11661632072190821,0.045884936748835335,0.011150199305652864,6443
+"Regenerated two-way FE, log DT, log quality, basic controls",0.020986647699790494,0.010201724241787237,0.03986394585463726,6443
+"Regenerated two-way FE, log DT, log quality, no controls",0.024304086555090844,0.01004542357272476,0.015678150943352342,6443
+"Regenerated year-FE Poisson, log DT, full controls",0.17409125444500442,0.05550262881596145,0.0017090119219762556,6574
+"Regenerated year-FE negative binomial, log DT, full controls",0.28886859312552987,0.06140668276548203,2.548780441153673e-06,6574
