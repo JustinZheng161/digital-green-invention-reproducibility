@@ -39,6 +39,7 @@ data/private/
 *.csv
 !results/tables/*.csv
 !results/tables/**/*.csv
+!results/reviewer_r3/tables/*.csv
 
 # Do not publicly commit manuscript or author-identifying working files
 paper/

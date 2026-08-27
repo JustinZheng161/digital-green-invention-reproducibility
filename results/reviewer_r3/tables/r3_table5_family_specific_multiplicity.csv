@@ -1,0 +1,6 @@
+Family scope,Specification,p_value,Holm p,Bonferroni p,BH-FDR q
+Table 5: five functional-form/control variants (S1–S5),S1 OLS log quality; raw DT; full controls; firm/year FE,0.1911105185246204,0.3822210370492408,0.955552592623102,0.2388881481557755
+Table 5: five functional-form/control variants (S1–S5),S2 OLS log quality; winsorized raw DT; full controls; firm/year FE,0.2522202622782534,0.3822210370492408,1.0,0.2522202622782534
+Table 5: five functional-form/control variants (S1–S5),S3 OLS log quality; ln(1+DT); full controls; firm/year FE,0.0536212744639175,0.226790016858129,0.2681063723195875,0.0938283839577576
+Table 5: five functional-form/control variants (S1–S5),S4 OLS log quality; ln(1+winsorized DT); full controls; firm/year FE,0.0562970303746546,0.226790016858129,0.281485151873273,0.0938283839577576
+Table 5: five functional-form/control variants (S1–S5),S5 OLS log quality; ln(1+winsorized DT); core controls; firm/year FE,0.0453580033716258,0.226790016858129,0.226790016858129,0.0938283839577576

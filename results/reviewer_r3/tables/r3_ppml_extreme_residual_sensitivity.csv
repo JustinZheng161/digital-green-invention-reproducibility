@@ -1,0 +1,3 @@
+Model,Estimator,Scope,Coefficient on DT_log,Firm-clustered SE,95% CI lower,95% CI upper,p_value_unadjusted,Candidate observations,Retained observations,Retained firms,Note
+Locked conditional PPML,Conditional PPML,Estimator-retained contribution set,0.0933248243801191,0.050678208187703376,-0.006002639252284753,0.19265228801252296,0.06554570897703083,6574,2774,505,Reference diagnostic model.
+Exclude all retained observations with |Pearson residual| > 3,Conditional PPML,Post-review diagnostic sensitivity,0.0861368282027114,0.044491592829720275,-0.0010650920461984653,0.17333874845162128,0.052864660625102866,2709,2636,489,"Threshold applied once to every observation in the locked PPML retained set; exploratory, not a model-selection rule."
