@@ -42,6 +42,8 @@ The raw-DT two-way fixed-effects linear specification gives a coefficient of 0.0
 | Final editorial-compliance response | [`docs/FINAL_EDITORIAL_COMPLIANCE_RESPONSE.md`](docs/FINAL_EDITORIAL_COMPLIANCE_RESPONSE.md) |
 | Final print-ready non-formula closure | [`docs/FINAL_PRINTREADY_NONFORMULA_RESPONSE.md`](docs/FINAL_PRINTREADY_NONFORMULA_RESPONSE.md) |
 | 600 dpi TIFF/PDF figure delivery manifest | [`results/figures/publication_figure_asset_manifest.json`](results/figures/publication_figure_asset_manifest.json) |
+| Current Nature-style semantic figure package | [`results/nature_style_figures/nature_style_figure_manifest.json`](results/nature_style_figures/nature_style_figure_manifest.json) |
+| Nature-style figure source, technical rules, and validation | [`docs/NATURE_STYLE_FIGURE_GUIDE.md`](docs/NATURE_STYLE_FIGURE_GUIDE.md) |
 | Figure technical manifest | [`docs/figure_technical_manifest.json`](docs/figure_technical_manifest.json) |
 | Two-part descriptive decomposition | [`results/reviewer_r1/tables/two_part_descriptive_decomposition.csv`](results/reviewer_r1/tables/two_part_descriptive_decomposition.csv) |
 | Final reviewer validation | Private: `analysis/r4/validate_final_minor_revision.py`; public aggregate outputs and tests remain available in this repository |
@@ -54,7 +56,8 @@ The raw-DT two-way fixed-effects linear specification gives a coefficient of 0.0
 ├── docs/                   # evidence log, experiment matrix, revision record
 ├── metadata/               # SHA-256 values of downloaded source archives
 ├── results/
-│   ├── figures/            # aggregate diagnostic and coefficient figures
+│   ├── figures/            # historical aggregate diagnostic and coefficient figures
+│   ├── nature_style_figures/ # current semantic PNG/PDF/SVG/TIFF figure package
 │   ├── tables/             # aggregate regression and audit tables
 │   ├── reviewer_r1/        # R1 aggregate diagnostics, selection/multiplicity supplements
 │   ├── reviewer_r2/        # R2 estimator-retention, timing and availability-calibration audit
@@ -96,15 +99,24 @@ python src/run_selection_ipw_sensitivity.py
 python src/run_reviewer_r2_analysis.py
 python src/run_reviewer_r3_analysis.py
 python src/build_r3_multiplicity_inventory.py
+python src/rebuild_nature_style_figures.py
+python src/build_figure_contact_sheet.py
 python tests/test_reproducibility.py
 python tests/test_reviewer_r1.py
 python tests/test_reviewer_r2.py
 python tests/test_reviewer_r3.py
 python tests/test_model_upgrades.py
+python tests/test_nature_style_figures.py
 python tests/audit_public_release.py
 ```
 
 The test assumes the source archives have been downloaded, their SHA-256 hashes match [`metadata/source_archive_sha256.txt`](metadata/source_archive_sha256.txt), and the private derived panel exists at the configured path. If your local path differs, set a private project root first rather than editing the source data.
+
+## Nature-style figure package
+
+The current figure package is stored at [`results/nature_style_figures/`](results/nature_style_figures/), using descriptive stems rather than opaque names such as `image1.png`. Each of the seven manuscript figures is available as a 600 dpi RGB PNG, 600 dpi RGB LZW TIFF, editable SVG, and PDF, with complete data-source and format provenance in the [manifest](results/nature_style_figures/nature_style_figure_manifest.json). The reconstruction code and a fail-closed asset validator are public. See the [Nature-style figure guide](docs/NATURE_STYLE_FIGURE_GUIDE.md) for the seven-figure mapping, public/private boundary, and exact reproduction commands.
+
+> **Presentation-only alignment.** “Nature-style” describes graphical technical alignment with public figure guidance; it is not a claim of submission, acceptance, endorsement, or topical fit by *Nature*.
 
 ## What is and is not publicly released
 

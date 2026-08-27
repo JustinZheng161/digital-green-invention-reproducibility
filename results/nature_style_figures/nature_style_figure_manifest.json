@@ -1,0 +1,119 @@
+{
+  "style": "Nature-inspired graphical style (not a claim of journal acceptance)",
+  "style_basis": "docs/NATURE_STYLE_FIGURE_GUIDE.md",
+  "figures": [
+    {
+      "figure": "Figure 1",
+      "semantic_stem": "figure_01_dt_and_green_invention_distributions",
+      "data_source": "Private matched complete-case panel",
+      "description": "Distribution of DT_raw_count and collaborative-green-invention count; the DT axis is symlog to show the observed right tail and the count display is truncated at 15.",
+      "outputs": {
+        "png": "results/nature_style_figures/figure_01_dt_and_green_invention_distributions.png",
+        "pdf": "results/nature_style_figures/figure_01_dt_and_green_invention_distributions.pdf",
+        "svg": "results/nature_style_figures/figure_01_dt_and_green_invention_distributions.svg",
+        "tiff": "results/nature_style_figures/figure_01_dt_and_green_invention_distributions.tiff"
+      },
+      "raster_dpi": 600,
+      "colour_space": "RGB",
+      "tiff_compression": "LZW",
+      "vector_text": "editable SVG/PDF with Type 42 PDF fonts"
+    },
+    {
+      "figure": "Figure 2",
+      "semantic_stem": "figure_02_estimator_specific_associations",
+      "data_source": "Released aggregate R3 coefficient table",
+      "description": "Estimator-specific DT_log associations with 95% confidence intervals; panels retain their original estimator-specific scales and samples.",
+      "outputs": {
+        "png": "results/nature_style_figures/figure_02_estimator_specific_associations.png",
+        "pdf": "results/nature_style_figures/figure_02_estimator_specific_associations.pdf",
+        "svg": "results/nature_style_figures/figure_02_estimator_specific_associations.svg",
+        "tiff": "results/nature_style_figures/figure_02_estimator_specific_associations.tiff"
+      },
+      "raster_dpi": 600,
+      "colour_space": "RGB",
+      "tiff_compression": "LZW",
+      "vector_text": "editable SVG/PDF with Type 42 PDF fonts"
+    },
+    {
+      "figure": "Figure A1",
+      "semantic_stem": "figure_A1_count_ols_residual_diagnostic",
+      "data_source": "Private matched complete-case panel; locked count-OLS diagnostic",
+      "description": "Residual-versus-fitted view of the same deterministic 3,000-observation subset used in the locked count-OLS diagnostic.",
+      "outputs": {
+        "png": "results/nature_style_figures/figure_A1_count_ols_residual_diagnostic.png",
+        "pdf": "results/nature_style_figures/figure_A1_count_ols_residual_diagnostic.pdf",
+        "svg": "results/nature_style_figures/figure_A1_count_ols_residual_diagnostic.svg",
+        "tiff": "results/nature_style_figures/figure_A1_count_ols_residual_diagnostic.tiff"
+      },
+      "raster_dpi": 600,
+      "colour_space": "RGB",
+      "tiff_compression": "LZW",
+      "vector_text": "editable SVG/PDF with Type 42 PDF fonts"
+    },
+    {
+      "figure": "Figure B1",
+      "semantic_stem": "figure_B1_matching_selection_standardized_differences",
+      "data_source": "Released aggregate selection standardized-difference table",
+      "description": "Absolute standardized mean differences between D1 source observations and the matched panel.",
+      "outputs": {
+        "png": "results/nature_style_figures/figure_B1_matching_selection_standardized_differences.png",
+        "pdf": "results/nature_style_figures/figure_B1_matching_selection_standardized_differences.pdf",
+        "svg": "results/nature_style_figures/figure_B1_matching_selection_standardized_differences.svg",
+        "tiff": "results/nature_style_figures/figure_B1_matching_selection_standardized_differences.tiff"
+      },
+      "raster_dpi": 600,
+      "colour_space": "RGB",
+      "tiff_compression": "LZW",
+      "vector_text": "editable SVG/PDF with Type 42 PDF fonts"
+    },
+    {
+      "figure": "Figure B2",
+      "semantic_stem": "figure_B2_estimator_sample_retention",
+      "data_source": "Released aggregate R2 sample-flow table",
+      "description": "Estimator-specific retained-observation shares relative to the matched complete-case panel.",
+      "outputs": {
+        "png": "results/nature_style_figures/figure_B2_estimator_sample_retention.png",
+        "pdf": "results/nature_style_figures/figure_B2_estimator_sample_retention.pdf",
+        "svg": "results/nature_style_figures/figure_B2_estimator_sample_retention.svg",
+        "tiff": "results/nature_style_figures/figure_B2_estimator_sample_retention.tiff"
+      },
+      "raster_dpi": 600,
+      "colour_space": "RGB",
+      "tiff_compression": "LZW",
+      "vector_text": "editable SVG/PDF with Type 42 PDF fonts"
+    },
+    {
+      "figure": "Figure C1",
+      "semantic_stem": "figure_C1_ppml_residual_and_dispersion_diagnostics",
+      "data_source": "Private matched complete-case panel; locked conditional PPML diagnostic",
+      "description": "Pearson-residual screen and 20-bin mean-squared-Pearson-residual pattern for the estimator-retained conditional-PPML sample.",
+      "outputs": {
+        "png": "results/nature_style_figures/figure_C1_ppml_residual_and_dispersion_diagnostics.png",
+        "pdf": "results/nature_style_figures/figure_C1_ppml_residual_and_dispersion_diagnostics.pdf",
+        "svg": "results/nature_style_figures/figure_C1_ppml_residual_and_dispersion_diagnostics.svg",
+        "tiff": "results/nature_style_figures/figure_C1_ppml_residual_and_dispersion_diagnostics.tiff"
+      },
+      "raster_dpi": 600,
+      "colour_space": "RGB",
+      "tiff_compression": "LZW",
+      "vector_text": "editable SVG/PDF with Type 42 PDF fonts"
+    },
+    {
+      "figure": "Figure D1",
+      "semantic_stem": "figure_D1_strict_timing_estimator_support",
+      "data_source": "Released aggregate R2 calendar-year support table",
+      "description": "Calendar-year retained-observation support for strict lag and strict lead conditional-PPML timing estimators.",
+      "outputs": {
+        "png": "results/nature_style_figures/figure_D1_strict_timing_estimator_support.png",
+        "pdf": "results/nature_style_figures/figure_D1_strict_timing_estimator_support.pdf",
+        "svg": "results/nature_style_figures/figure_D1_strict_timing_estimator_support.svg",
+        "tiff": "results/nature_style_figures/figure_D1_strict_timing_estimator_support.tiff"
+      },
+      "raster_dpi": 600,
+      "colour_space": "RGB",
+      "tiff_compression": "LZW",
+      "vector_text": "editable SVG/PDF with Type 42 PDF fonts"
+    }
+  ],
+  "privacy": "Only figures, public aggregate inputs and source code are written under results/nature_style_figures."
+}
