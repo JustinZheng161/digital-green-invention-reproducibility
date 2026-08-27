@@ -28,6 +28,8 @@ The raw-DT two-way fixed-effects linear specification gives a coefficient of 0.0
 | Reproduction audit | [`results/tables/reported_result_audit.md`](results/tables/reported_result_audit.md) |
 | Literature/design comparison | [`docs/research_evidence_log.md`](docs/research_evidence_log.md) |
 | Method upgrades and limitations | [`docs/model_and_methods_upgrade.md`](docs/model_and_methods_upgrade.md) |
+| Model and experiment upgrade report | [`docs/MODEL_UPGRADE_REPORT.md`](docs/MODEL_UPGRADE_REPORT.md) |
+| Control-block ablation and exposure robustness | [`results/tables/model_upgrade_sensitivities.csv`](results/tables/model_upgrade_sensitivities.csv) |
 | R1 diagnostics, multiplicity, selection and two-part results | [`results/reviewer_r1/`](results/reviewer_r1/) |
 | R1 response letter | [`docs/reviewer_r1/RESPONSE_TO_REVIEWER_R1_FINAL.md`](docs/reviewer_r1/RESPONSE_TO_REVIEWER_R1_FINAL.md) |
 | R2 sample/PPML/IPW/timing audit | [`results/reviewer_r2/tables/reviewer_r2_model_audit.md`](results/reviewer_r2/tables/reviewer_r2_model_audit.md) |
@@ -76,6 +78,7 @@ export DGI_PRIVATE_DATA_ROOT="/absolute/path/to/digital-green-invention-data-pri
 
 ```bash
 python src/run_analysis.py
+python src/run_model_upgrades.py
 python src/run_specification_sensitivity.py
 python src/audit_reported_results.py
 python src/run_robustness_tests.py
@@ -108,7 +111,7 @@ The test assumes the source archives have been downloaded, their SHA-256 hashes 
 
 The scripts validate unique firm-year keys, year support, count zeros, matched sample size, model availability and figure creation. A second complete run produced byte-identical core matched-panel and main-model CSV outputs in the controlled environment. The R1 scripts add residual diagnostics for the supplemental count-OLS model, Holm/Bonferroni adjustment for the S1–S5 family, standardized mean differences, observed-covariate calibration, and a descriptive two-part decomposition. The R2 script verifies the raw-count-like stored D2 scale, reports conditional-PPML retention (including all-zero-firm and preprocessing/separation components), reports strict timing support by year, and redefines IPW as availability calibration—not causal weighting. The exact checks are described in [`docs/EXPERIMENT_MATRIX.md`](docs/EXPERIMENT_MATRIX.md), [`docs/MANUSCRIPT_REVISION_LOG.md`](docs/MANUSCRIPT_REVISION_LOG.md), and the [R2 response](docs/RESPONSE_TO_REVIEWER_R2_FINAL.md).
 
-The source data are public DOI releases, but their underlying inputs cite services such as CNRDS, CSMAR, Wind and annual reports. This repository does not assert that those upstream records are sublicensable. Please review the source datasets’ terms before downloading, redistributing, or combining them with licensed data. The R3 proxy analyses use the released D2 `R&D expenditure` field only after a strict calendar-year lag; because the workbook does not disclose that field’s numerical transformation or units, it is not represented as verified R&D intensity. The D1 `lngpfm` field is similarly a lagged inventive-activity proxy, not a patent stock.
+The source data are public DOI releases, but their underlying inputs cite services such as CNRDS, CSMAR, Wind and annual reports. The model-upgrade script produces aggregate tables only and runs with `DGI_PRIVATE_DATA_ROOT`; raw archives and row-level panels remain outside this public repository. This repository does not assert that those upstream records are sublicensable. Please review the source datasets’ terms before downloading, redistributing, or combining them with licensed data. The R3 proxy analyses use the released D2 `R&D expenditure` field only after a strict calendar-year lag; because the workbook does not disclose that field’s numerical transformation or units, it is not represented as verified R&D intensity. The D1 `lngpfm` field is similarly a lagged inventive-activity proxy, not a patent stock.
 
 ## Methodological notes
 
