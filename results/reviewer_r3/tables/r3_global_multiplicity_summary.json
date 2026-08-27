@@ -1,0 +1,19 @@
+{
+  "distinct_association_tests_in_global_inventory": 33,
+  "diagnostics_excluded_from_inventory": [
+    "OLS residual-normality and heteroskedasticity checks",
+    "PPML Pearson X2 screen and number of |Pearson residual| > 3 observations",
+    "sample-flow, balance, and key-uniqueness calculations"
+  ],
+  "deduplicated_models": [
+    "S1 duplicates M0 exactly",
+    "S3 duplicates M1 exactly",
+    "locked R3 reference rows duplicate M1/M3 and are not entered again"
+  ],
+  "minimum_unadjusted_p": 0.011150197757207,
+  "minimum_p_model": "M2: OLS, patent count, log DT, firm and year FE",
+  "n_global_holm_significant_at_005": 0,
+  "n_global_bonferroni_significant_at_005": 0,
+  "n_global_bh_fdr_significant_at_005": 0,
+  "interpretation": "All association p-values remain unadjusted in their result tables. The 33-test global screen is a post-review transparency sensitivity across distinct reported association estimates; it is not a preregistered confirmatory family and does not settle which heterogeneous models should be combined."
+}

@@ -1,0 +1,36 @@
+{
+  "scope": "Post-review descriptive sensitivity analysis; no causal interpretation.",
+  "proxy_construction": {
+    "released_rd_field": "D2 column R&D expenditure as released; its workbook numerical transformation/unit is not documented in this pipeline.",
+    "lagged_rd_field": "Strict one-calendar-year lag of the released D2 R&D expenditure field.",
+    "lagged_invention_proxy": "Strict one-calendar-year lag of D1 lngpfm, labeled ln(1+invention patent)."
+  },
+  "ppml_residual_screen": {
+    "Model": "Locked conditional PPML",
+    "Retained observations": 2774,
+    "Retained firms": 505,
+    "Slope parameters counted": 15,
+    "Approximate df (N minus slope parameters)": 2759,
+    "Pearson X2": 4390.8056146704,
+    "Pearson X2 / approximate df": 1.5914482111889816,
+    "Residual definition": "(y - fitted conditional mean) / sqrt(fitted conditional mean)",
+    "Absolute Pearson threshold": 3.0,
+    "Observations above absolute threshold": 65,
+    "Share above absolute threshold": 0.02343186733958183,
+    "Largest absolute Pearson residual": 8.446566505303863,
+    "Maximum fitted conditional mean": 28.696523011580037,
+    "Caution": "The denominator ignores the high-dimensional fixed-effect degrees of freedom and is a descriptive dispersion screen, not a formal goodness-of-fit test."
+  },
+  "extreme_residual_rule": "Apply |Pearson residual| > 3 to all observations retained by the locked conditional PPML, then refit once.",
+  "firm_deletion_rule": "Delete each of the top 6 of 505 retained firms ranked by Pearson X2 contribution, one at a time.",
+  "files": [
+    "r3_proxy_sensitivity_models.csv",
+    "r3_ppml_pearson_residual_summary.csv",
+    "r3_ppml_extreme_residual_sensitivity.csv",
+    "r3_ppml_top_contribution_firm_deletions.csv",
+    "r3_global_association_test_inventory.csv",
+    "r3_table5_family_specific_multiplicity.csv",
+    "r3_d2_rd_proxy_year_support.csv",
+    "r3_ppml_diagnostics.png"
+  ]
+}

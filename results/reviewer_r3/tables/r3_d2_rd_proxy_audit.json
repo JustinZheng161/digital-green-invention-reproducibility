@@ -1,0 +1,189 @@
+{
+  "workbook_sheets": [
+    "Digital Transformation",
+    "Sheet1"
+  ],
+  "secondary_sheet_shape": [
+    27,
+    5
+  ],
+  "secondary_sheet_preview_first_12_rows": [
+    [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      "1.0",
+      "Stockcode"
+    ],
+    [
+      null,
+      null,
+      null,
+      "2.0",
+      "Year"
+    ],
+    [
+      null,
+      null,
+      null,
+      "3.0",
+      "Chinese name of company"
+    ],
+    [
+      null,
+      null,
+      null,
+      "4.0",
+      "English name of company"
+    ],
+    [
+      null,
+      null,
+      null,
+      "5.0",
+      "abbreviated name"
+    ],
+    [
+      null,
+      null,
+      null,
+      "6.0",
+      "Firm age"
+    ],
+    [
+      null,
+      null,
+      null,
+      "7.0",
+      "SOE"
+    ],
+    [
+      null,
+      null,
+      null,
+      "8.0",
+      "Firm size"
+    ],
+    [
+      null,
+      null,
+      null,
+      "9.0",
+      "ROE"
+    ]
+  ],
+  "analysis_sheet": "Digital Transformation",
+  "d2_rows": 17089,
+  "d2_columns": [
+    "Stockcode",
+    "Year",
+    "Chinese name of company",
+    "English name of company",
+    "abbreviated name",
+    "Firm age",
+    "SOE",
+    "Firm size",
+    "ROE",
+    "Digital Transformation",
+    "Dynamic Capability",
+    "Strategic Risk Taking",
+    "Industry",
+    "Gross revenue",
+    "Selling expenses",
+    "Administrative expenses",
+    "Financial expenses",
+    "Total profit",
+    "Total assets",
+    "Total liability",
+    "ROA",
+    "Capital expenditure",
+    "Long term debt",
+    "R&D expenditure"
+  ],
+  "rd_revenue_candidate_columns": [
+    "Gross revenue",
+    "R&D expenditure"
+  ],
+  "missing_expected_columns": [],
+  "d2_key_duplicates_stockcode_year": 0,
+  "matched_panel_observations": 6574,
+  "matched_panel_firms": 1468,
+  "merge_status_counts": {
+    "both": 6574,
+    "left_only": 0,
+    "right_only": 0
+  },
+  "rd_expenditure_d2_on_matched_panel": {
+    "n_nonmissing": 6574,
+    "n_zero": 0,
+    "n_negative": 0,
+    "minimum": 5.09375,
+    "q01": 13.78322081565857,
+    "median": 18.435505867004395,
+    "mean": 18.43264732014128,
+    "q99": 22.747784423828122,
+    "maximum": 24.103981018066406
+  },
+  "gross_revenue_d2_on_matched_panel": {
+    "n_nonmissing": 6574,
+    "n_zero": 0,
+    "n_negative": 0,
+    "minimum": 31727545.97,
+    "q01": 301482529.7057,
+    "median": 3833618530.26,
+    "mean": 20430282759.48742,
+    "q99": 262435603549.99893,
+    "maximum": 2966193000000.0
+  },
+  "literal_rd_over_revenue_ratio": {
+    "n_nonmissing": 6574,
+    "n_zero": 0,
+    "n_negative": 0,
+    "minimum": 7.911359608621944e-12,
+    "q01": 8.260170649663825e-11,
+    "median": 4.7797689403646615e-09,
+    "mean": 8.647091397986985e-09,
+    "q99": 5.596627465860381e-08,
+    "maximum": 5.359018184051952e-07
+  },
+  "exp_rd_over_revenue_transformation_assumption_ratio": {
+    "n_nonmissing": 6574,
+    "n_zero": 0,
+    "n_negative": 0,
+    "minimum": 1.1962296003949918e-07,
+    "q01": 0.00016502826036788739,
+    "median": 0.03357694888266265,
+    "mean": 0.0412042407036771,
+    "q99": 0.21801609463824773,
+    "maximum": 2.516191424761643
+  },
+  "correlation_released_rd_field_with_log_gross_revenue": 0.5544893586102281,
+  "valid_intensity_observations": 6574,
+  "valid_intensity_firms": 1468,
+  "valid_intensity_share_of_matched_panel": 1.0,
+  "rd_missing_or_negative": 0,
+  "revenue_missing_or_nonpositive": 0,
+  "unit_interpretation": "The data article describes R&D expenditure as the annual investment figure from annual reports and describes R&D intensity conceptually as R&D investment divided by sales revenue, but its released workbook does not label the numerical transformation or unit of the R&D-expenditure column. Literal released-R&D/revenue and exp(released-R&D)/revenue distributions are therefore reported only as scale diagnostics. Neither is called verified R&D intensity unless source documentation or reproducible code establishes the transformation.",
+  "scope_interpretation": "This audit establishes deterministic key availability only. Adding this contemporaneous D2-derived proxy as a control would be a sensitivity analysis and cannot establish causal identification or resolve unobserved R&D/knowledge-stock confounding."
+}
