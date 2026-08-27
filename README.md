@@ -38,6 +38,8 @@ The raw-DT two-way fixed-effects linear specification gives a coefficient of 0.0
 | R3 reviewer matrix and response | [`docs/reviewer_r3/`](docs/reviewer_r3/) |
 | Round-4 reviewer response and closure matrix | [`docs/REVIEWER_ROUND4_RESPONSE.md`](docs/REVIEWER_ROUND4_RESPONSE.md) |
 | Final minor-revision response and closure matrix | [`docs/REVIEWER_FINAL_MINOR_REVISION_RESPONSE.md`](docs/REVIEWER_FINAL_MINOR_REVISION_RESPONSE.md) |
+| SCI technical-compliance response | [`docs/TECHNICAL_COMPLIANCE_RESPONSE.md`](docs/TECHNICAL_COMPLIANCE_RESPONSE.md) |
+| Figure technical manifest | [`docs/figure_technical_manifest.json`](docs/figure_technical_manifest.json) |
 | Two-part descriptive decomposition | [`results/reviewer_r1/tables/two_part_descriptive_decomposition.csv`](results/reviewer_r1/tables/two_part_descriptive_decomposition.csv) |
 | Final reviewer validation | Private: `analysis/r4/validate_final_minor_revision.py`; public aggregate outputs and tests remain available in this repository |
 

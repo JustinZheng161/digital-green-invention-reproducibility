@@ -1,0 +1,79 @@
+[
+  {
+    "asset": "image1.png",
+    "format": "PNG",
+    "width_px": 3032,
+    "height_px": 1177,
+    "dpi": [
+      299.9994,
+      299.9994
+    ],
+    "technical_status": "approximately 300 dpi; numeric axes inspected"
+  },
+  {
+    "asset": "image2.png",
+    "format": "PNG",
+    "width_px": 3033,
+    "height_px": 1300,
+    "dpi": [
+      299.9994,
+      299.9994
+    ],
+    "technical_status": "approximately 300 dpi; numeric axes inspected"
+  },
+  {
+    "asset": "image3.png",
+    "format": "PNG",
+    "width_px": 2070,
+    "height_px": 1320,
+    "dpi": [
+      299.9994,
+      299.9994
+    ],
+    "technical_status": "approximately 300 dpi; numeric axes inspected"
+  },
+  {
+    "asset": "image4.png",
+    "format": "PNG",
+    "width_px": 2070,
+    "height_px": 1290,
+    "dpi": [
+      299.9994,
+      299.9994
+    ],
+    "technical_status": "approximately 300 dpi; numeric axes inspected"
+  },
+  {
+    "asset": "image5.png",
+    "format": "PNG",
+    "width_px": 2370,
+    "height_px": 1350,
+    "dpi": [
+      299.9994,
+      299.9994
+    ],
+    "technical_status": "approximately 300 dpi; numeric axes inspected"
+  },
+  {
+    "asset": "image6.png",
+    "format": "PNG",
+    "width_px": 3024,
+    "height_px": 1208,
+    "dpi": [
+      299.9994,
+      299.9994
+    ],
+    "technical_status": "approximately 300 dpi; numeric axes inspected"
+  },
+  {
+    "asset": "image7.png",
+    "format": "PNG",
+    "width_px": 2370,
+    "height_px": 1410,
+    "dpi": [
+      299.9994,
+      299.9994
+    ],
+    "technical_status": "approximately 300 dpi; numeric axes inspected"
+  }
+]
